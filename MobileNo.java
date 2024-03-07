@@ -10,7 +10,7 @@ public class MobileNo extends Main{
 	public void mobile() {
 		System.out.println("Contact Information: ");
 		mobileNumber = input.nextLine();
-		if(mobileNumber.length() != 10 || mobileNumber.indexOf("0") != 0 ){
+		if(mobileNumber.length() != 10 && mobileNumber.indexOf("0") != 0 ){
 			System.out.println("The mobile number must have 10 digits and begin with 0");
 			isError = true;
 		}
